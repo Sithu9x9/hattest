@@ -1,0 +1,49 @@
+@use "../custom" as *;
+
+footer {
+    ul {
+        li {
+            padding: 0.3rem 0;
+
+            a {
+                font-size: .8rem;
+            }
+
+            a:hover {
+                padding-left: 5px;
+                color: $orange;
+            }
+        }
+    }
+
+    .footer-links {
+        flex: 1;
+
+        h5 {
+            position: relative;
+            margin-bottom: 1.5rem;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -1rem;
+                left: 0;
+                height: 3px;
+                width: 30px;
+                border-radius: 20px;
+                background-color: $orange;
+            }
+        }
+    }
+
+    .social-links {
+        a {
+            transition: all 0.3s;
+            color: $white;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+}
